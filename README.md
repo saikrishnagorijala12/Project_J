@@ -1,139 +1,103 @@
-# Jarvis - Voice AI Assistant
 
-Jarvis is a simple **voice-enabled AI assistant** built with Python.  
-It can listen for a **wake word**, process natural language, perform system tasks, search the web, fetch weather, set reminders, and more.  
+# 🧑‍💻 Jarvis Voice Assistant
+
+Jarvis is a **Python-based voice-controlled AI assistant** that can perform a wide range of tasks, such as answering questions, controlling your system, fetching weather, searching the web, telling jokes, and much more.
 
 ---
 
 ## 🚀 Features
-- 🎙️ **Wake word detection** ("Jarvis")  
-- 🗣️ **Speech-to-text & Text-to-speech** interaction  
-- 🔍 **DuckDuckGo-powered web search** with summarization  
-- 🌦️ **Weather lookup** (via API integration)  
-- ⏰ **Reminder system** (voice-based reminders)  
-- 💻 **System commands** (open apps, shutdown, restart, etc.)  
-- 👋 **Greeting a friend by name** (name extracted from voice input)  
+- 🎤 **Voice Interaction** – Wake word detection (`"Jarvis"`, `"Hey Jarvis"`) and speech recognition.
+- 🗣️ **Text-to-Speech** – Responds naturally using `pyttsx3`.
+- 🌦️ **Weather Updates** – Fetches real-time weather information (via [OpenWeather API](https://openweathermap.org/)).
+- 🕒 **Time & Date** – Announces current time and date.
+- 💻 **System Commands** – Open apps (Firefox, Chrome, VS Code, Terminal), control volume, check IP/system info, shutdown/restart.
+- 📂 **File Operations** – Create, delete, list, and open folders.
+- 📖 **Wikipedia Lookup** – Fetches summaries for topics.
+- 🔍 **Google Search** – Finds and reads aloud top search results.
+- 😂 **Jokes** – Tells programming jokes using `pyjokes`.
+- ⏰ **Reminders** – Set voice-based reminders.
+- 👋 **Greeting Friends** – Recognizes names and greets personally.
 
 ---
 
-## 📂 Project Structure
-project/
-│── jarvis/
-│ ├── init.py
-│ ├── main.py # Main entry point
-│ ├── intents.py # Intent classification & keywords
-│ ├── handlers/
-│ │ ├── init.py
-│ │ ├── search.py # Web search (DuckDuckGo API)
-│ │ ├── weather.py # Weather handler
-│ │ ├── reminder.py # Reminder handler
-│ │ ├── system.py # System command handler
-│ │ └── greeting.py # Greeting handler
-│ ├── nlp.py # spaCy preprocessing & intent detection
-│ ├── speech.py # Speech recognition & TTS
-│ └── utils.py # Helper functions (summarizer, etc.)
-│
-├── README.md
-├── requirements.txt
-└── run.sh # (Optional) Shell script to run Jarvis
+## 🛠️ Requirements
 
+Install the dependencies with:
 
----
+```bash
+pip install speechrecognition pyttsx3 spacy wikipedia google requests beautifulsoup4 pyjokes
+```
 
-## ⚙️ Installation
+You also need to download the **spaCy English model**:
 
-1. **Clone the repo**
-   ```bash
-   git clone https://github.com/yourusername/jarvis-assistant.git
-   cd jarvis-assistant
-
-
-Create a virtual environment
-
-python3 -m venv .venv
-source .venv/bin/activate
-
-
-Install dependencies
-
-pip install -r requirements.txt
-
-
-Download spaCy model
-
+```bash
 python -m spacy download en_core_web_sm
+```
 
-▶️ Running Jarvis
+**Additional system dependencies:**
+- `ffmpeg` (for `speechrecognition`)
+- `pyaudio` (microphone access)
+- `neofetch` (for system info, optional)
+- Linux system commands (`xdg-open`, `pactl`, etc.) – adapt for Windows/Mac if needed.
 
-Run the assistant:
+---
 
-python -m jarvis.main
+## 🔑 Setup API Keys
+For weather updates, get a free API key from [OpenWeather](https://openweathermap.org/api) and replace in the script:
 
+```python
+api_key = "YOUR_API_KEY_HERE"
+```
 
-Jarvis will:
+---
 
-Wait for the wake word ("Jarvis")
+## ▶️ Usage
 
-Listen for commands
+Run the assistant with:
 
-Respond with voice + text
+```bash
+python jarvis.py
+```
 
-🧩 Example Commands
+Jarvis will announce:
+```
+Jarvis is online. Say 'Jarvis' to wake me up.
+```
 
-Greeting
+Then you can say commands like:
+- "Jarvis, what’s the weather in London?"
+- "Jarvis, open Chrome"
+- "Jarvis, tell me a joke"
+- "Jarvis, remind me to drink water in 5 minutes"
+- "Jarvis, search Python tutorials on Google"
 
-"Jarvis, say hi to John"
+To stop:
+- Say **"exit"**, **"quit"**, or **"bye"**.
 
-Web Search
+---
 
-"Jarvis, search for the latest iPhone"
+## ⚠️ Notes
+- Optimized for **Linux**. You may need to adjust system commands for Windows/Mac.
+- Requires a working microphone and speakers.
+- Background standby mode until wake word is detected.
 
-Weather
+---
 
-"Jarvis, what's the weather in London?"
+## 📌 Roadmap
+- [ ] Cross-platform system command support (Windows/Mac).
+- [ ] Better intent classification (using ML models).
+- [ ] Continuous listening mode toggle.
+- [ ] GUI interface.
 
-Time
+---
 
-"Jarvis, what time is it?"
+## 🤝 Contributing
+Contributions are welcome!  
+Feel free to fork, open issues, and submit pull requests.
 
-Reminder
+---
 
-"Jarvis, remind me to call mom at 7 PM"
+## 📜 License
+This project is licensed under the MIT License – feel free to use and modify.
 
-System Command
-
-"Jarvis, open Chrome"
-
-"Jarvis, shutdown the system"
-
-📦 Requirements
-
-Python 3.8+
-
-speechrecognition
-
-pyttsx3
-
-spacy
-
-duckduckgo-search
-
-(Optional) Weather API key (OpenWeatherMap, etc.)
-
-Install all at once:
-
-pip install -r requirements.txt
-
-🛠️ Future Enhancements
-
-🔑 Integration with Perplexity or Gemini for richer answers
-
-📅 Persistent calendar & reminders
-
-🖥️ GUI interface
-
-🤖 Smarter NLP intent classification
-
-📜 License
-
-MIT License © 2025 [Sai Krishna Gorijala]
+---
