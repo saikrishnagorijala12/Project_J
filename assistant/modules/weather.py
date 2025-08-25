@@ -1,5 +1,4 @@
-from core.speak import speak
-from core.listen import listen
+from assistant.core import speak,listen
 import requests
 
 
@@ -13,7 +12,7 @@ def ask_city():
     return city
 
 def get_weather(city):
-    api_key = "API"
+    api_key = "431a1f97c7bb066efa54bbc925a4a715"
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
     try:
         res = requests.get(url, timeout=5).json()

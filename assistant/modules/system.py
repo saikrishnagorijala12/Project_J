@@ -1,7 +1,6 @@
 import os
 import subprocess
 
-
 # ------------------ System Commands ------------------
 def handle_system(text):
     text_lower = text.lower()

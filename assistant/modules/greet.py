@@ -1,5 +1,4 @@
-from config import nlp
-
+from assistant.config import nlp
 
 # ------------------ Greet Friend ------------------
 def handle_greet_friend(text):

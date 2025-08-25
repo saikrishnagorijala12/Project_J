@@ -1,8 +1,8 @@
+import requests
 from googlesearch import search
 import webbrowser
-from core.speak import speak
-import requests
 from bs4 import BeautifulSoup
+from assistant.core import speak
 
 
 # ------------------ Google Search (read aloud) ------------------

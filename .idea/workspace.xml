@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a7c87af-9cee-4969-8996-2b514f2e152b" name="Changes" comment="" />
+    <list default="true" id="2a7c87af-9cee-4969-8996-2b514f2e152b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assistant/modules/personality.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/intents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/listen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/speak.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/google.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/greet_friend.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/jokes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/remider.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/system.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/weather.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/wikipedia.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/intents_handler.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +34,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -31,11 +52,14 @@
     "Python.app.executor": "Run",
     "Python.listen.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/saikrishna/Project_J",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assistant" />
       <recent name="C:\Users\saikr\Desktop\Project_J" />
     </key>
   </component>
@@ -49,7 +73,6 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.13 (Project_J)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -67,7 +90,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-4c141bd692a7-e2d783800521-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.26927.90" />
+        <option value="bundled-python-sdk-d9fa9deec7cb-d902c0275401-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.23892.515" />
       </set>
     </attachedChunks>
   </component>

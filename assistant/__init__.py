@@ -1,10 +1,9 @@
-from modules.remider import check_reminders
-from core.speak import speak
-from core.listen import listen_for_wake_word,listen
-from utils.intents_handler import ask_ai
-import os
-
 # ------------------ Main Loop ------------------
+import os
+from assistant.core import speak, listen_for_wake_word, listen, ask_ai
+from assistant.modules.reminder import check_reminders
+
+
 def main():
     speak("Jarvis is online. Say 'Jarvis' to wake me up.")
     check_reminders()

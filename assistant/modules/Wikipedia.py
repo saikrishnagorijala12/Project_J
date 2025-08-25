@@ -1,6 +1,4 @@
 import wikipedia
-import requests
-
 
 # ------------------ Wikipedia Lookup ------------------
 def handle_wikipedia(text):
